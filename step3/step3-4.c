@@ -3,16 +3,22 @@
 
 int main(){
 
-    int sum;
-    int type;
-    scanf("%d %d", &sum, &type);
+    int x, n, a, b;
+    int sum = 0;
+    scanf("%d\n", &x);
+    scanf("%d\n", &n);
 
-    for(int i = 0; i <= sum; i++){
-        int price;  
-        int count;
-        scanf("%d %d", &price, &count);
+    for(int i = 0; i <= n; i++){
+        scanf("%d %d", &a, &b);
+        sum += a * b;
 
     }
+
+
+    if (x = sum) 
+        printf("YES");
+    else
+        printf("No");
 
 
     return 0;
