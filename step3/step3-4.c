@@ -3,20 +3,26 @@
 
 int main(){
 
-    int x, n, a, b;
-    int sum = 0;
-    scanf("%d\n", &x);
-    scanf("%d\n", &n);
+    int result;
+    int num;
 
-    for(int i = 0; i <= n; i++){
-        scanf("%d %d", &a, &b);
-        sum += a * b;
+    scanf("%d\n", &result);
+    scanf("%d\n", &num);
+
+    int x, y;
+    int sum = 0;
+    
+
+    for(int i = 0; i < num; i++){
+        scanf("%d %d", &x, &y);
+        sum += (x * y);
 
     }
 
 
-    if (x = sum) 
-        printf("YES");
+
+    if (sum == result) 
+        printf("Yes");
     else
         printf("No");
 
